@@ -1,0 +1,325 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: helvetica;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+}
+html{
+    scroll-behavior: smooth;
+}
+@media screen and (max-width:415px){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+    }
+    .movil{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: blue;
+        color: white;
+        padding: 10px;
+        font-size: 15px;
+    }
+    .movil a{
+        color: white;
+    }
+    nav{
+        background-color: white;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 10px;
+        width: 150px;
+        text-align: start;
+        position: absolute;
+        top: 100%;
+        left: -120%;
+        z-index: 8;
+        background-color: white;
+        padding: 20px;
+    }
+    nav ul li{
+        list-style: none;
+        border-bottom: 2px blue  solid;
+        padding-left: 5px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: black;
+        font-size: 1rem;
+    }
+    nav ul.abrir_menu{
+        left: 0;
+    }
+    .rslides {
+        position: relative;
+        list-style: none;
+        overflow: hidden;
+        max-width: 1200px;
+        min-height: 400px;
+        padding: 0;
+        margin: auto;
+        }
+    
+      .rslides li {
+        backface-visibility: hidden;
+        position: absolute;
+        display: none;
+        width: 100%;
+        left: 0;
+        top: 0;
+        }
+      
+      .rslides li:first-child {
+        position: relative;
+        display: block;
+        float: left;
+        }
+      
+      .rslides img {
+        display: block;
+        height: auto;
+        float: left;
+        width: 100%;
+        min-height: 400px;
+        border: 0;
+        object-fit: cover;
+        }
+        .contenedor{
+            position: relative;
+        }
+    .contenedor_info{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 7;
+        width: 350px;
+        color: white;
+        text-align: center;
+        padding: 30px;
+    }
+    .contenedor_info h1{
+        padding-bottom: 10px;
+    }
+    .contenedor_info p{
+        text-align: start;
+        padding: 8px;
+    }
+    .para figure{
+        background-size: cover;
+        object-fit: cover;
+        background-position: center;
+        background-attachment: fixed;
+        width: auto;
+        height: 400px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .para figure img{
+        width: 100%;
+        height: 100%;
+    }
+    .ifo a{
+        margin-top: 20px;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    }
+    .about h1{
+        text-align: center;
+        font-size: 2rem;
+        padding: 20px;
+    }
+    .info{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 7;
+        width: 350px;
+        color: white;
+        text-align: center;
+        padding: 30px;
+    }
+    .info a{
+        padding: 15px 30px;
+        border: 1px white solid;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .info h2{
+        padding: 20px;
+    }
+    .service{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(183, 241, 222);
+        gap: 20px;
+        padding: 10px;
+    }
+    .service h1{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .service article{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        text-align: center;
+        background-color: white;
+    }
+    .service article figure{
+        padding: 0;
+        margin: 0;
+        width: 15%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .service article figure img{
+        width: 100%;
+    }
+    .team{
+        padding: 20px;
+    }
+    .team h1{
+        text-align: center;
+        font-size: 2rem;
+        padding: 15px;
+    }
+    .contenedor_fotos{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .contendor_fotos figure{
+        width: 50%;
+    }
+    .contenedor_fotos img{
+        width: 100%;
+    }
+
+    .testi h1{
+        font-size: 2rem;
+        padding: 15px;
+        text-align: center;
+    }
+    .slide figure{
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        margin-bottom: 15px;
+    }
+    .slide figure img{
+        width: 100%;
+    }
+    .slide h4{
+        color: blue;
+    }
+    .slide-buttons a{
+        padding: 15px 15px;
+        background-color: blue;
+        color: white;
+    }
+    .slide-buttons{
+        gap: 20px;
+    }
+    .noticias{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .noticias h1{
+        text-align: center;
+        font-size: 2rem;
+        padding: 10px;
+    }
+    .acordeon-titulo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        background-color: blue;
+        padding: 10px;
+    }
+    .acordeon-contenido{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+    .acordeon-contenido figure{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .acordeon-contenido figure img{
+        width: 100%;
+    }
+    .linea{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .linea i{
+        color: blue;
+        padding: 5px;
+    }
+    .acordeon-contenido h2{
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+    .acordeon-contenido p{
+        padding: 10px;
+    }
+    #flecha {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        z-index: 10;
+        bottom: 0;
+        right: 0;
+        background-color: blue;
+        border-radius: 50%;
+    
+    }
+    #flecha i{
+        color: white;
+    }
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-color: midnightblue;
+    }
+
+}
